@@ -1,0 +1,99 @@
+.reservation-container {
+  min-height: 90vh;
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+.reservation-container h1 {
+  color: #2d6a4f;
+  margin-bottom: 30px;
+}
+.table-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.table-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 30px;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.capacity {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.status {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.status.available {
+  color: #2d6a4f;
+}
+.status.booked {
+  color: #c0392b;
+}
+.countdown {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+.table-card button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.table-card button:disabled {
+  background: #ccc;
+  border: none;
+  color: #777;
+  cursor: not-allowed;
+}
+.primary-btn {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+}
+.primary-btn:hover {
+  background: #1b4332;
+}
+.secondary-btn {
+  background: transparent;
+  color: #2d6a4f;
+  border: 2px solid #2d6a4f;
+}
+.secondary-btn:hover {
+  background: #2d6a4f;
+  color: white;
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.booking-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.error-text {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.booking-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: white;
+}

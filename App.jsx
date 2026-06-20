@@ -1,16 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import HomePage from "./HomePage";
-import LoginPage from "./LoginPage";
-
-export default function App() {
-  // Simple client-side page state — swap for React Router if you prefer
-  const [page, setPage] = useState("home");
-
+import Home from "./Home";
+import Login from "./Login";
+import AboutUs from "./AboutUs";
+import ContactUs from "./ContactUs";
+import TableReservation from "./TableReservation";
+import Menu from "./Menu";
+function App() {
   return (
-    <>
-      <Navbar currentPage={page} onNavigate={setPage} />
-      {page === "home"  && <HomePage  onNavigate={setPage} />}
-      {page === "login" && <LoginPage onNavigate={setPage} />}
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/code" element={<TableReservation />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;

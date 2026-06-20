@@ -1,0 +1,24 @@
+.contact-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+}
+.contact-box {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.contact-box h1 {
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+.contact-detail {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #333;
+}
